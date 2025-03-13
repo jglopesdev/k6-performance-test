@@ -15,9 +15,9 @@ Ter uma conta no MongoDB com um banco de dados criado para fazer a conexão com 
 
 > Eu usei a versão `v18.20.7` do Node.js, use esta ou superior.
 
-Execute os comandos abaixo para instalar das dependências do projeto:
-`cd curso-k6-basico/api`
-`yarn install`
+Execute os comandos abaixo para instalar das dependências do projeto:      
+`cd curso-k6-basico/api`      
+`yarn install`      
 `yarn dev`
 
 
