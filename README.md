@@ -1,7 +1,7 @@
 # k6-performance-test
 Neste projeto executo testes de perfomance com K6 em um ambiente local usando uma API real.
 
-![image](https://github.com/user-attachments/assets/b16e9c95-1627-4b5b-9ec0-a81b74dcd3b5)
+![image](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_9fcecb565c7303e367747d46e315effe/k6.png)
 
 
 ## Pré condições / Instalações
