@@ -1,63 +1,26 @@
-# Introdução aos testes de performance com k6
+# k6-performance-test
+Neste projeto executo testes de perfomance com K6 em um ambiente local usando uma API real.
 
-<h1 align="left">
-    <img src=".github/logo-stiker.svg" width="250px">
-</h1>
+![image](https://github.com/user-attachments/assets/b16e9c95-1627-4b5b-9ec0-a81b74dcd3b5)
 
-# User API
 
-## 🔖 Requisitos funcionais
+## Pré condições / Instalações
 
-### Cadastro
+Acesse https://grafana.com/docs/k6/latest/set-up/install-k6/ e faça o download do K6.
 
-- [X] Deve retornar os id ao cadastrar um novo usuário
-- [X] Deve retornar 201 ao cadastrar um novo usuário
-- [X] Deve retornar 400 ao tentar cadastrar sem email e senha
-- [X] Deve retornar 400 se o email for duplicado
+Para subir a API que vamos testar a performance, necessitamos fazer o git clone do [projeto](https://github.com/weareqacademy/curso-k6-basico)      
+Ter uma conta no MongoDB com um banco de dados criado para fazer a conexão com a API, através do arquivo .env que está no diretorio `curso-k6-basico/api/src/`
 
-| campos   | descrição                             | tipo     | obrigatório |
-| :-----   | :------------------------------------ | :------- | :---------- |
-| email    | usuário identificador único           | email    | sim         |
-| password | senha do usuário                      | texto    | sim         |
+É necessário ter instalado o Node.js para colocar a API no ar.
 
-## 🔖 Requisitos não funcionais
-
-### Cadastro
-
-- [ ] O cadastro com sucesso deve ocorrer em até 2 segundos
-- [ ] Cadastros sem sucesso devem ocorrer em até 2 segundos
-- [ ] Deve poder cadastrar até 100 usuários simultâneos
-- [ ] A margem de erro no cadastro deve ser de pelo menos 1%
-
-## 🚀 Tecnologias
-
-- [Node.js] - plataforma de desenvolvimento
-- [Express] - framework onde a API foi construída
-- [MongoDB] - Banco de dados (Não relacional)
-- [k6] - ferramenta para teste de carga, performance, stress etc...
-
-## 👨🏻‍💻 Como executar o projeto
-
-[Node.js](https://nodejs.org/) v16 ou superior para executar.
-
-Para liberar o gerenciador de pacotes Yarn:
-
-```
-corepack enable
-```
+> Eu usei a versão `v18.20.7` do Node.js, use esta ou superior.
 
 Execute os comandos abaixo para instalar das dependências do projeto:
+`cd curso-k6-basico/api`
+`yarn install`
+`yarn dev`
 
-```sh
-cd curso-k6-basico/api
-yarn install
-yarn dev
-```
 
-## 📝 License
+## Creditos
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feito com 💜 &nbsp;por Fernando Papito 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
+Projeto criado a partir dos conhecimentos aprendidos durante o curso Introdução aos testes de perfomance com K6, ministrado pelo [Fernando Papito](https://www.udemy.com/user/fernando-papito/)
